@@ -52,10 +52,12 @@ def main(size):
     cn_password = os.getenv("CN_PASSWORD")
     global_username = os.getenv("GLOBAL_USERNAME")
     global_password = os.getenv("GLOBAL_PASSWORD")
+    size = os.getenv("SIZE")
     assert cn_username, "CN_USERNAME is required"
     assert cn_password, "CN_PASSWORD is required"
     assert global_username, "GLOBAL_USERNAME is required"
     assert global_password, "GLOBAL_PASSWORD is required"
+    assert size, "SIZE is required"
 
     garth.configure(domain=CN_DOMAIN)
     garth.login(cn_username, cn_password)
