@@ -1,7 +1,7 @@
 ## 利用 Github Action 实现 Garmin CN 到 Global 的数据同步
 
 1. 注册 Garmin 中国区和国际区账号；
-2. Fork repositories, 将各自账号密码填入 Repository secrets:
+2. Fork repository [GarminCN2Global](https://github.com/thekingofcool/GarminCN2Global), 将各自账号密码填入 Repository secrets:
 
 ```
 GARMIN_GLOBAL_USERNAME
