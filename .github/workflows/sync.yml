@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
 
 env:
-  CN_USERNAME: ${{ secrets.GARMIN_USERNAME }}
-  CN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
-  GLOBAL_USERNAME: ${{ secrets.GARMIN_GLOBAL_USERNAME }}
-  GLOBAL_PASSWORD: ${{ secrets.GARMIN_GLOBAL_PASSWORD }}
+  GARMIN_CN_USERNAME: ${{ secrets.GARMIN_CN_USERNAME }}
+  GARMIN_CN_PASSWORD: ${{ secrets.GARMIN_CN_PASSWORD }}
+  GARMIN_GLOBAL_USERNAME: ${{ secrets.GARMIN_GLOBAL_USERNAME }}
+  GARMIN_GLOBAL_PASSWORD: ${{ secrets.GARMIN_GLOBAL_PASSWORD }}
   SIZE: ${{ secrets.SIZE }}
 jobs:
   run-script:
