@@ -8,6 +8,7 @@ env:
   CN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
   GLOBAL_USERNAME: ${{ secrets.GARMIN_GLOBAL_USERNAME }}
   GLOBAL_PASSWORD: ${{ secrets.GARMIN_GLOBAL_PASSWORD }}
+  SIZE: ${{ secrets.SIZE }}
 jobs:
   run-script:
     runs-on: ubuntu-latest
