@@ -3,11 +3,13 @@
 1. 注册 Garmin 中国区和国际区账号；
 2. Fork repositories, 将各自账号密码填入 Repository secrets:
 
+```
 GARMIN_GLOBAL_USERNAME
 GARMIN_GLOBAL_PASSWORD
 GARMIN_CN_USERNAME
 GARMIN_CN_PASSWORD
 SIZE
+```
 
 3. Actions 中点击 Run workflow，同步完成。
 
