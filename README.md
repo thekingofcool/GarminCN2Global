@@ -12,4 +12,4 @@ SIZE
 ```
 3. Actions 中点击 Run workflow，同步完成。
 
-Follow my [Strava](https://www.strava.com/athletes/thekingofcool).
+Follow me on [Strava](https://www.strava.com/athletes/thekingofcool) if you find it helpful.
