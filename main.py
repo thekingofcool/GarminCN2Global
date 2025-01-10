@@ -43,16 +43,14 @@ def upload_activity(client, fp: FileIO):
         if e.error.response.status_code == 409:
             print(f"File already exists: {fp.name}")
 
-@click.command()
-@click.option('--size', default=10, help='每次同步回溯的活动数量')
-def main(size):
+def main():
     load_dotenv()
 
     cn_username = os.getenv("CN_USERNAME")
     cn_password = os.getenv("CN_PASSWORD")
     global_username = os.getenv("GLOBAL_USERNAME")
     global_password = os.getenv("GLOBAL_PASSWORD")
-    size = os.getenv("SIZE")
+    size = int(os.getenv("SIZE"))
     assert cn_username, "CN_USERNAME is required"
     assert cn_password, "CN_PASSWORD is required"
     assert global_username, "GLOBAL_USERNAME is required"
