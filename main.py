@@ -46,10 +46,10 @@ def upload_activity(client, fp: FileIO):
 def main():
     load_dotenv()
 
-    cn_username = os.getenv("CN_USERNAME")
-    cn_password = os.getenv("CN_PASSWORD")
-    global_username = os.getenv("GLOBAL_USERNAME")
-    global_password = os.getenv("GLOBAL_PASSWORD")
+    cn_username = os.getenv("GARMIN_CN_USERNAME")
+    cn_password = os.getenv("GARMIN_CN_PASSWORD")
+    global_username = os.getenv("GARMIN_GLOBAL_USERNAME")
+    global_password = os.getenv("GARMIN_GLOBAL_PASSWORD")
     size = int(os.getenv("SIZE"))
     assert cn_username, "CN_USERNAME is required"
     assert cn_password, "CN_PASSWORD is required"
