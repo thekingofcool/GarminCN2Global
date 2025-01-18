@@ -68,7 +68,7 @@ def main():
     g_client.sess.headers.update(USER_AGENT)
     
     sync(size, cn_client, g_client)
-    sync(size, g_client, cn_client)
+    # sync(size, g_client, cn_client)
 
 def sync(size, source, target):
     start = 0
